@@ -1,0 +1,30 @@
+[
+  {
+    "query": "Here are my notes from 8 customer interviews about our reporting module (pasted below). Can you turn them into insights for my PM? We need to decide whether to build scheduled reports.",
+    "expected_behavior": [
+      "Breaks notes into atomic observations with participant IDs before clustering",
+      "Clusters by meaning into named themes written as statements, not one-word labels",
+      "Writes insights in the who/what/why/implication format with n/N by segment, a verbatim pseudonymized quote, who didn't fit, and a confidence rating",
+      "Keeps observation, interpretation and recommendation separate and ties recommendations to the scheduled-reports decision with an owner",
+      "Uses n/N rather than percentages for the 8-person sample"
+    ]
+  },
+  {
+    "query": "Create personas for our enterprise security product from these 14 interviews with end users, admins, and a few CISOs.",
+    "expected_behavior": [
+      "Reads reference/reports-and-personas.md",
+      "Builds archetypes from behavioral variables and clustered evidence, not demographics or invented biography",
+      "Analyzes end users, admins and buyers/approvers separately, and marks archetypes with fewer than 8 interviews per role as provisional",
+      "Each archetype lists evidence (participant IDs, n/N), goals, behaviors, pain points, a JTBD statement, a quote and design implications"
+    ]
+  },
+  {
+    "query": "We have 20 findings from our onboarding study. Help me prioritize them and make a readout deck outline for leadership.",
+    "expected_behavior": [
+      "Reframes findings as How Might We opportunities",
+      "Scores each on impact, frequency and severity (1-3) with priority = I x F x S and act-now/plan/monitor bands, shown in a table",
+      "Builds or proposes an opportunity solution tree from a measurable outcome down to assumption tests",
+      "Produces a 10-14 slide readout outline with finding-as-headline slides, n/N evidence, limitations and a decisions slide"
+    ]
+  }
+]

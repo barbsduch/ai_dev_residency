@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Here's our Figma flow for bulk-inviting users by CSV. Can you break it into user stories with acceptance criteria for Jira? Owners and Admins can invite, Members can't.",
+    "expected_behavior": [
+      "Writes an epic with outcome, metric (baseline to target) and in/out of scope",
+      "Splits vertically using SPIDR or workflow/role techniques into small stories with specific roles and outcome-based 'so that' clauses",
+      "Gives 3-8 Given/When/Then ACs per story plus a UX checklist covering loading, empty, error, partial and no-permission states, exact error copy, keyboard/focus, responsive and analytics events",
+      "Includes a role/permission matrix with the denied experience for Members, and lists open questions with owners"
+    ]
+  },
+  {
+    "query": "Is this story ready for sprint? 'As a user, I want a better dashboard that is fast and intuitive, with export, filters and sharing.'",
+    "expected_behavior": [
+      "Runs the INVEST check and explains which letters fail (vague role, no outcome, not small, not testable)",
+      "Rewrites it with a specific role and real outcome, and splits export, filters and sharing into separate stories",
+      "Replaces 'fast' and 'intuitive' with measurable, observable acceptance criteria",
+      "Applies the Definition of Ready checklist and states what is missing (design links, states, copy, permissions)"
+    ]
+  },
+  {
+    "query": "I need a one-page design brief for redesigning SSO setup for admins, and a handoff checklist for when the designs go to engineering.",
+    "expected_behavior": [
+      "Reads reference/briefs-and-handoff.md and follows the brief template: problem with evidence, users and roles, goals, success metrics with baseline/target/guardrail, scope and non-goals, risks and assumptions, open questions",
+      "Names multiple enterprise roles (admin, IT identity engineer, end user) and stakeholders such as security, CS and support",
+      "Provides a per-story handoff note covering links, components, tokens, all states, keyboard and focus, copy, analytics events and edge cases",
+      "Marks unknowns as 'Unknown - owner - date' rather than omitting them"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "query": "I'm designing a new 'Segmented control' for our Figma library because our Tabs don't fit filter toggles. Can you spec it for me?",
+    "expected_behavior": [
+      "Checks first whether an existing component or variant (Tabs, Toggle button group, Filter chips) can do the job and frames this as a contribution request with use cases from multiple teams",
+      "Defines anatomy, variants and properties whose names match the coded component API",
+      "Designs every relevant state: default, hover, focus, active, disabled, selected, read-only, plus combinations like selected + focus",
+      "Maps parts to component tokens that alias semantic tokens and specifies density, responsive behavior, and 24 px minimum targets",
+      "Includes accessibility (keyboard model, accessible names, 3:1 focus and boundaries, selection not shown by color alone) and uses the component documentation template from reference/component-docs-and-governance.md"
+    ]
+  },
+  {
+    "query": "We're setting up color tokens for our design system and want dark mode later. How should we name and structure them in Figma variables?",
+    "expected_behavior": [
+      "Reads reference/foundations-and-tokens.md",
+      "Recommends three tiers - primitive, semantic, component - with purpose-based names such as color.action.primary.bg.hover rather than appearance-based names",
+      "Sets up Figma variable collections with hidden primitives and semantic modes for Light, Dark, and High contrast, scoped appropriately",
+      "Requires contrast validation for every semantic pair in every theme (4.5:1 text, 3:1 UI components and focus)",
+      "Gives a small token JSON or table example and lists common naming mistakes"
+    ]
+  },
+  {
+    "query": "Here's my design for the user management page for admins - can you check it against our design system before I hand off to engineering?",
+    "expected_behavior": [
+      "Runs the design QA checklist from reference/component-docs-and-governance.md",
+      "Checks the table, filters, and bulk actions against reference/enterprise-patterns.md (sticky header, filter chips, count in bulk action labels, partial-failure handling)",
+      "Flags detached instances, raw values, and missing states such as first-use empty, no results, loading, error, and no-permission",
+      "Verifies role-based views, the destructive confirmation pattern for deactivating users, and accessibility annotations",
+      "Returns findings in the output template with deviations annotated and gaps logged as contributions"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "query": "I have a Figma prototype of our new user-permissions screen for admins. Can you write a usability test plan and tasks I can run next week?",
+    "expected_behavior": [
+      "Reads reference/test-plans-and-scripts.md and uses the test plan template",
+      "States the decision, research questions, and testable hypotheses with success thresholds",
+      "Recommends moderated think-aloud with 5 participants per segment, separating admins from end users, and a 1-person pilot",
+      "Writes scenario tasks with motivation and a clear end state, without UI words or on-screen labels, including a permission-boundary task",
+      "Defines full, partial, and failure criteria and time limits per task, plus SEQ after each task and SUS or UMUX-Lite at the end"
+    ]
+  },
+  {
+    "query": "We ran our test with 5 people. Task 1: 4 succeeded, task 2: 2 succeeded. SUS answers attached for each person. What's our SUS and how do I report this to the PM?",
+    "expected_behavior": [
+      "Reads reference/metrics-and-reporting.md",
+      "Computes SUS correctly: odd items minus 1, 5 minus even items, sum times 2.5, averaged across participants, and compares to the 68 benchmark",
+      "Reports success as n/N with adjusted-Wald 95% confidence intervals instead of bare percentages, noting 5 participants find problems rather than prove rates",
+      "Rates findings on the 0-4 severity scale with n/N and quote or clip evidence",
+      "Uses the findings report output template with what worked, limitations, and next round"
+    ]
+  },
+  {
+    "query": "No budget for users this sprint. Can you do a heuristic evaluation and accessibility check of these dashboard mockups before handoff?",
+    "expected_behavior": [
+      "Reads reference/heuristics-and-accessibility-review.md and names the persona and primary tasks first",
+      "Evaluates against Nielsen's 10 heuristics with enterprise-specific issues and states it is a single-evaluator, predicted-severity review",
+      "Checks contrast (4.5:1 text, 3:1 large text and UI components), focus order and visible focus, 24 px target size, persistent labels, color not used alone, and all component states",
+      "Cites the WCAG 2.2 criterion for each accessibility finding and gives one concrete recommendation per finding",
+      "Lists predicted severity 3 and 4 issues to validate with users in a later round"
+    ]
+  }
+]

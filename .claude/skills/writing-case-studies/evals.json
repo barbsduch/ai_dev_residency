@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Help me turn my notes on the permissions settings redesign into a portfolio case study. I was the only designer, worked with a PM and 5 engineers for 6 months. I don't have hard metrics, just some usability test results and positive feedback from CS.",
+    "expected_behavior": [
+      "Reads reference/case-study-templates.md and uses the outcome-first structure with a TL;DR stating problem, role, and result",
+      "Writes 2-4 key decisions with options, evidence, call, and trade-off",
+      "Uses proxy metrics (task success, time on task, SUS, ticket signals) clearly labeled as proxies and does not invent numbers",
+      "Flags missing information as open gaps and includes visual list with insight captions and alt text"
+    ]
+  },
+  {
+    "query": "Can you critique my case study? It's about 3,000 words, starts with a long background section, and has 20 screens at the end. Hiring managers don't seem to get past the first scroll.",
+    "expected_behavior": [
+      "Reads reference/writing-and-review.md and runs the 60-second skim test first",
+      "Scores the case study with the 1-4 rubric across all criteria",
+      "Gives top 5 fixes most impactful first, each with a rewritten example (e.g. outcome-led headline, insight captions)",
+      "Recommends cuts toward 800-1,500 words and replacing the gallery with a few annotated before/after screens"
+    ]
+  },
+  {
+    "query": "I have a 45-minute portfolio review for a senior product designer role at an enterprise SaaS company next week. My best project is under NDA. How should I structure the presentation and what questions should I prepare for?",
+    "expected_behavior": [
+      "Provides the 45-minute deck outline with slide-by-slide timing and Q&A buffer",
+      "Applies NDA treatment: anonymize company, redraw or abstract screens, use relative metrics, check with employer",
+      "Lists likely interview questions with the headline-context-action-result-reflection answer structure",
+      "Emphasizes decisions, trade-offs, stakeholder influence, and enterprise complexity suited to a senior role"
+    ]
+  }
+]

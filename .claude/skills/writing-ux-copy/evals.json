@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Write all the copy for our new 'Invite users' modal in the admin console - email field, role picker, send button, and whatever states we need.",
+    "expected_behavior": [
+      "Frames the persona (workspace admin) and task before drafting",
+      "Covers every state: default, validation errors, already-a-member, sending, success toast, partial failure for bulk invites, and no-permission",
+      "Uses verb + object buttons (e.g. 'Send invites') in sentence case with errors written as what happened + how to fix",
+      "Delivers the string table with keys, states, character limits, ICU plural notes, and no concatenated strings"
+    ]
+  },
+  {
+    "query": "Can you review the wording on this screen? Errors say 'Invalid input', the empty table says 'No data', and the delete popup is 'Are you sure? OK / Cancel'.",
+    "expected_behavior": [
+      "Reads reference/component-copy-patterns.md",
+      "Rewrites each string with the review table showing original, rewrite, rule number, and why",
+      "Splits the empty state into first-use and no-results variants with a CTA",
+      "Replaces the confirmation with a title naming the action, a body stating object, count and reversibility, and a specific verb button instead of OK"
+    ]
+  },
+  {
+    "query": "We need a voice and tone guide and a glossary for our product - people keep saying workspace, space, and tenant interchangeably. How do we test if the new copy is clearer?",
+    "expected_behavior": [
+      "Reads reference/voice-style-and-testing.md",
+      "Produces a voice chart with 3-4 attributes (we are / we are not / do / don't) and a tone-by-context table",
+      "Produces a glossary that picks one term per concept with 'don't use' alternatives and notes",
+      "Recommends content testing methods with thresholds, such as cloze test at 60% or higher and comprehension questions with the real persona"
+    ]
+  }
+]

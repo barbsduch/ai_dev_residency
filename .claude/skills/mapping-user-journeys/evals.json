@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Can you create a current-state journey map for how a new workspace admin onboards their team to our product? I have notes from 6 admin interviews and a list of top support tickets.",
+    "expected_behavior": [
+      "Writes a scope card first: one persona with role and permission level, one scenario, a trigger and a measurable end state",
+      "Uses 4-7 stages in user language and fills lanes for actors, actions, touchpoints, thoughts, emotion (-2..+2), pain points, handoffs/waits, metrics and opportunities as a paste-ready table",
+      "Cites interview or ticket sources on pains and marks unsupported items as Assumption",
+      "Marks 2-4 moments of truth on an emotion curve and turns pains into scored opportunities with priority bucket and owner"
+    ]
+  },
+  {
+    "query": "I need a user flow for requesting access to a restricted report - the requester, their manager who approves, and the admin who grants it. Include what happens when things go wrong.",
+    "expected_behavior": [
+      "Reads reference/flows-and-blueprints.md and uses the step-by-step flow table with node IDs",
+      "Shows separate actors and the waiting time between them",
+      "Covers happy, alternate, validation error, system error, timeout/no response, denial, and no-permission branches, each with a labeled outcome and end",
+      "Specifies the copy needed for errors and permission messages, naming who to ask, and notes notifications and audit events"
+    ]
+  },
+  {
+    "query": "Our onboarding keeps breaking between sales, the onboarding CSM and support. Can you build a service blueprint so we can see where it falls apart?",
+    "expected_behavior": [
+      "Uses the service blueprint template with evidence, customer actions, frontstage, backstage, support processes, policies and time/SLA lanes, including the line of visibility",
+      "Includes a cross-channel handoff table listing owner, context passed and context lost at each handoff",
+      "Marks fail points and waits, and links each to an owned, prioritized opportunity",
+      "Flags which items are assumptions and suggests evidence to collect"
+    ]
+  }
+]

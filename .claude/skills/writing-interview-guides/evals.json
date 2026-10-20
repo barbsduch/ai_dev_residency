@@ -1,0 +1,31 @@
+[
+  {
+    "query": "I need a 45-minute interview guide for workspace admins about how they manage user permissions in our HR platform. We're deciding whether to build custom roles.",
+    "expected_behavior": [
+      "States the decision, research question, and 3-5 learning objectives that do not presuppose custom roles as the answer",
+      "Orders questions warm-up, context, broad behavior, deep dives, wrap-up with a per-section time budget that sums to 45 minutes",
+      "Tags every question with an objective and marks must-ask vs nice-to-have, with must-asks fitting roughly 70% of the time",
+      "Uses open past-behavior questions (e.g. 'Walk me through the last time you changed someone's access') with TEDW or why probes, and never asks 'Would you want custom roles?'",
+      "Includes a consent script, note-taking grid, and a behavioral admin screener with disqualifiers"
+    ]
+  },
+  {
+    "query": "Are these questions OK? 1) Would you use an AI assistant to write reports? 2) How do you create and share dashboards? 3) Is our export too slow? 4) How frustrating is onboarding?",
+    "expected_behavior": [
+      "Scores each question on the 5-point bias rubric (open, past behavior, specific, neutral, single idea)",
+      "Names the specific flaw: hypothetical and solution-led, double-barreled, yes/no and leading, presumed emotion",
+      "Provides a rewrite for each that scores at least 4/5, e.g. 'Tell me about the last report you wrote'",
+      "Uses the original, score, issue, rewrite, score table"
+    ]
+  },
+  {
+    "query": "Write a screener to recruit IT security approvers and buyers at companies with 1,000+ employees for interviews about how they evaluate SaaS vendors. Also tell me how to pilot the guide.",
+    "expected_behavior": [
+      "Reads reference/screeners-and-logistics.md",
+      "Screens on recent behavior with timeframes (e.g. reviewed or approved a vendor in the last 12 months), not job title alone",
+      "Includes disqualifiers first, distractor answer options, an open articulation question, and quotas per role with a cap per account",
+      "Separates buyer and IT/security approver segments rather than mixing them",
+      "Describes the pilot procedure: one matching participant, full-length run, mark each question, revise, re-pilot if more than two questions change"
+    ]
+  }
+]

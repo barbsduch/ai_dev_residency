@@ -1,6 +1,6 @@
-# Enterprise Skills Hub
+# Product Design Skills Hub
 
-This repo is a library of Claude Code skills for building enterprise-ready software. Skills live in `.claude/skills/` and load automatically in any session started inside this repo.
+This repo is a library of Claude Code skills for **product designers, UX researchers, UX writers, and design leads** shipping enterprise-ready software. Skills live in `.claude/skills/` and load automatically in any session started inside this repo.
 
 ## How to use the skills
 
@@ -8,21 +8,20 @@ Before starting any task, decide which skills apply and load them with the Skill
 
 | Skill | Load when the task involves |
 |---|---|
-| `designing-ux` | UI screens, flows, forms, tables, states, microcopy, UX reviews |
-| `building-accessible-ui` | Any UI code or design; WCAG, keyboard, screen readers, contrast |
-| `securing-applications` | Auth, user input, data access, secrets, APIs, uploads, security reviews |
-| `protecting-privacy` | Personal data, analytics, cookies, retention, audit logs, tenancy, SOC 2/GDPR |
-| `testing-code` | New features, bug fixes, refactors, CI, code review |
-| `optimizing-performance` | Page speed, queries, caching, jobs, monitoring, deploys, SLOs |
-| `designing-apis` | Endpoints, schemas, data models, webhooks, service boundaries, ADRs |
-| `building-ai-features` | LLM features, prompts, RAG, agents, evals, AI guardrails |
-| `conducting-user-research` | Interviews, usability tests, surveys, personas, competitive analysis |
-| `marketing-products` | Positioning, landing pages, copy, SEO, funnels, pricing, launches |
+| `writing-interview-guides` | Research plans, screeners, writing/sorting/testing interview questions, consent, note-taking |
+| `synthesizing-research` | Notes or transcripts → themes, insights, personas, JTBD, HMWs, research reports |
+| `mapping-user-journeys` | Journey maps, experience maps, service blueprints, user flows, task flows |
+| `writing-user-stories` | User stories, acceptance criteria, epics, design briefs, PRDs, handoff notes |
+| `running-usability-tests` | Usability test plans, tasks, scripts, SUS/SEQ, heuristic evaluations, design accessibility reviews |
+| `applying-design-systems` | Tokens, components, states, UI patterns, Figma libraries, component docs, design QA |
+| `writing-ux-copy` | Microcopy, error messages, buttons, empty states, voice and tone, content testing |
+| `writing-case-studies` | Portfolio case studies, project retrospectives, portfolio presentations |
 
 ## Defaults
-- Any code change: apply `securing-applications` and `testing-code` at minimum.
-- Any UI change: also apply `designing-ux` and `building-accessible-ui`.
-- Follow each skill's workflow checklist and output template. Run tests and report real results.
+- Outputs are for designers: tables, templates, and documents ready to paste into Figma, FigJam, Notion, Jira, or slides. No code unless asked.
+- Always apply the enterprise lens: multiple roles (end user, admin, buyer, approver), permissions, scale, WCAG 2.2 AA, privacy.
+- Any UI work: also apply `applying-design-systems` and `writing-ux-copy`.
+- Follow each skill's checklist, quality check, and output template. Ask for missing context only when it blocks the work; otherwise state assumptions.
 
 ## Working on the skills themselves
 - One folder per skill: `SKILL.md` (≤ 500 lines) + `reference/*.md` (linked one level deep) + `evals.json` (3 scenarios).
