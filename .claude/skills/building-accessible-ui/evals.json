@@ -1,0 +1,28 @@
+[
+  {
+    "query": "Create a React modal for confirming deletion of a project.",
+    "expected_behavior": [
+      "Reads reference/component-patterns.md and uses native <dialog> or role=\"dialog\" with aria-modal and aria-labelledby",
+      "Traps focus inside, closes on Esc, and returns focus to the trigger on close",
+      "Does not autofocus the destructive button and uses descriptive button labels",
+      "Recommends testing with keyboard, a screen reader, and axe"
+    ]
+  },
+  {
+    "query": "Audit this for accessibility: <div class=\"tab active\" onclick=\"show(1)\">Overview</div><div class=\"tab\" onclick=\"show(2)\">Billing</div> and our gray #999 text on white.",
+    "expected_behavior": [
+      "Flags non-semantic, non-keyboard-operable tabs citing 2.1.1 and 4.1.2 with the APG tabs pattern as the fix",
+      "Flags #999 on white as failing 1.4.3 (about 2.8:1, below 4.5:1) and proposes a compliant color",
+      "Uses the report table with WCAG success criteria and severity"
+    ]
+  },
+  {
+    "query": "We're adding drag-and-drop to reorder columns on our kanban board. Is there anything we need for WCAG 2.2?",
+    "expected_behavior": [
+      "Reads reference/wcag-checklist.md",
+      "Requires a single-pointer, non-drag alternative per 2.5.7 Dragging Movements (e.g. Move left/right buttons or a Move to menu)",
+      "Requires keyboard operability with announced position changes via a live region",
+      "Checks 2.5.8 target size of at least 24x24 CSS px and visible, unobscured focus (2.4.11)"
+    ]
+  }
+]

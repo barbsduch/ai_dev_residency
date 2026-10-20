@@ -1,0 +1,28 @@
+[
+  {
+    "query": "Add an endpoint GET /api/invoices/:id that returns the invoice.",
+    "expected_behavior": [
+      "Requires an authenticated session",
+      "Scopes the query to the caller's user or tenant (no IDOR)",
+      "Uses a parameterized query",
+      "Adds tests for unauthenticated (401) and other-user (403/404) access"
+    ]
+  },
+  {
+    "query": "Review this: const q = `SELECT * FROM users WHERE email = '${req.body.email}'`; const apiKey = 'sk_live_51H...';",
+    "expected_behavior": [
+      "Flags SQL injection as Critical with a parameterized fix",
+      "Flags the hardcoded live secret, recommends rotating it and moving it to env/secret manager",
+      "Uses the report table with OWASP categories"
+    ]
+  },
+  {
+    "query": "Build a password reset flow.",
+    "expected_behavior": [
+      "Reads reference/auth.md",
+      "Single-use, hashed, short-lived reset token",
+      "Same response whether or not the email exists",
+      "Rate limits the endpoint and notifies the user after reset"
+    ]
+  }
+]

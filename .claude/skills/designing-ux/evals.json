@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Build a page that lists all customer orders for our ops team.",
+    "expected_behavior": [
+      "Frames the task first (role, job, frequency, success criteria)",
+      "Designs empty (first-use and no-results), loading, error, partial, and no-permission states",
+      "Table has sensible default sort, filters synced to the URL, bulk actions with counts, and pagination or virtualization guidance",
+      "Uses verb + noun button labels and design-system tokens rather than hard-coded values"
+    ]
+  },
+  {
+    "query": "Here's a screenshot of our settings page - can you do a UX review?",
+    "expected_behavior": [
+      "Reads reference/heuristics-review.md",
+      "Identifies the primary task and evaluates against Nielsen's 10 heuristics",
+      "Rates each finding on the 0-4 severity scale with location and concrete recommendation",
+      "Uses the report table, most severe first, and lists missing states and strengths"
+    ]
+  },
+  {
+    "query": "Our form just shows 'Invalid input' in red at the top when something's wrong. How should we fix validation?",
+    "expected_behavior": [
+      "Reads reference/patterns.md",
+      "Recommends validate-on-blur, inline errors next to fields, and an error summary with links on submit",
+      "Rewrites error messages using what happened + why + how to fix",
+      "Requires preserving user input and not disabling submit to signal invalid fields"
+    ]
+  }
+]

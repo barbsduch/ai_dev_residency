@@ -1,0 +1,27 @@
+[
+  {
+    "query": "Our dashboard page is really slow, Lighthouse gives it 38 on mobile. Can you speed it up?",
+    "expected_behavior": [
+      "Measures a baseline first (LCP, INP, CLS, bundle size, API timings) before changing code",
+      "Reads reference/web-performance.md and targets the largest bottleneck (e.g. render-blocking JS, unoptimized LCP image, N+1 API queries)",
+      "Re-measures after each change and reports a before/after table against LCP < 2.5 s, INP < 200 ms, CLS < 0.1",
+      "Adds a regression guard such as a bundle-size budget or performance check in CI"
+    ]
+  },
+  {
+    "query": "We need to rename the column customer_name to full_name on our 50M-row orders table without downtime.",
+    "expected_behavior": [
+      "Reads reference/reliability-observability.md and uses the expand/contract pattern across multiple deploys",
+      "Backfills in batches with lock_timeout set, avoiding a single blocking rename",
+      "Keeps the app compatible with both schema versions so rollback stays possible"
+    ]
+  },
+  {
+    "query": "Our app calls a third-party shipping-rates API that sometimes hangs for 30 seconds and takes our checkout down. Fix this.",
+    "expected_behavior": [
+      "Adds an explicit timeout (a few seconds) and bounded retries with exponential backoff and jitter only for idempotent calls",
+      "Adds a circuit breaker and a graceful fallback (cached or default rates) instead of failing checkout",
+      "Adds metrics, structured logs with trace IDs, and an alert on dependency error rate or SLO burn"
+    ]
+  }
+]

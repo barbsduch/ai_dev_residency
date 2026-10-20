@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Write interview questions to find out if customers would use our new AI report generator.",
+    "expected_behavior": [
+      "Reframes around the decision and past behavior instead of 'Would you use...?'",
+      "Produces a guide with intro/consent, warm-up, past-behavior core questions, neutral probes, and wrap-up",
+      "Avoids leading or hypothetical questions and recommends 6-12 participants per segment with a behavioral screener",
+      "Recommends piloting the guide with one participant"
+    ]
+  },
+  {
+    "query": "We ran usability tests with 5 admins on the new permissions page. Here are my notes - can you synthesize them into findings?",
+    "expected_behavior": [
+      "Reads reference/synthesis-and-reporting.md",
+      "Separates observations from interpretations and clusters them into themes",
+      "States evidence as n/N with representative quotes, never percentages from 5 participants",
+      "Rates severity and confidence, lists limitations, and uses the report template"
+    ]
+  },
+  {
+    "query": "Design a survey to measure how satisfied enterprise customers are with our onboarding.",
+    "expected_behavior": [
+      "Reads reference/methods.md and ties each question to a research question",
+      "Uses balanced, labelled scales, single-concept questions, and behavior-frequency wording",
+      "States a target sample size with margin of error and expected B2B response rate",
+      "Includes consent/privacy handling and a pilot step"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "query": "Users report that the date picker shows the wrong day for people in Sydney. Fix it.",
+    "expected_behavior": [
+      "Writes a failing regression test first using a fake clock and explicit time zone, and runs it to confirm the failure",
+      "Fixes the root cause, then adds edge cases (DST boundary, end of month, UTC midnight)",
+      "Runs the full test suite and reports the actual command and pass/fail counts"
+    ]
+  },
+  {
+    "query": "Set up CI for our TypeScript monorepo so bad code can't get merged.",
+    "expected_behavior": [
+      "Reads reference/ci-quality-gates.md",
+      "Produces a GitHub Actions workflow with format, lint, typecheck, test, dependency audit, and build gates",
+      "Pins actions, sets timeouts and concurrency, and recommends branch protection with required checks",
+      "Adds a PR template and a flaky-test policy"
+    ]
+  },
+  {
+    "query": "Write tests for this endpoint: GET /api/projects returns the projects for the logged-in user's organization.",
+    "expected_behavior": [
+      "Uses integration tests with factories and a real or containerized database rather than mocking internal modules",
+      "Covers unauthenticated 401, other-organization isolation, empty list, and pagination boundaries",
+      "Tests behavior through the HTTP interface with Arrange-Act-Assert and descriptive names",
+      "Runs the tests and reports real results instead of assuming they pass"
+    ]
+  }
+]
