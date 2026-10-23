@@ -1,7 +1,7 @@
 # Week 1 Submission — Claude Skills
 
 ## Links
-1. GitHub repository: https://github.com/barbsduch/wk1_claude_skills
+1. GitHub repository: https://github.com/barbsduch/ai_dev_residency
 2. Hosted Vercel app: _N/A_
 
 ## Documents
